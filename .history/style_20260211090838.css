@@ -52,7 +52,7 @@ body {
    HERO SECTION
 ===================== */
 .hero {
-  background: #d91f26;
+  background: #1fd938;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -150,6 +150,7 @@ body {
   position: relative;
   overflow: hidden;
 
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 4% 100%);
 }
 
 

@@ -67,7 +67,7 @@ body {
   position: relative;
   box-shadow: inset -50px 0 100px rgba(0,0,0,0.4);
 
-  clip-path: polygon(0 0, 96% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(0 0, 92% 0, 82% 100%, 0% 100%);
 }
 
 
@@ -142,14 +142,15 @@ body {
 
 /* HERO RIGHT */
 .hero-right {
-  width: 45%;
-  background: #d91f26;
+  width: 80%;
+  background: greenyellow;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   position: relative;
   overflow: hidden;
 
+  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 8% 100%);
 }
 
 

@@ -52,7 +52,7 @@ body {
    HERO SECTION
 ===================== */
 .hero {
-  background: #d91f26;
+  background: #1fd93e;
   display: flex;
   height: 100vh;
   overflow: hidden;
@@ -60,14 +60,14 @@ body {
 
 /* HERO LEFT */
 .hero-left {
-  width: 55%;
+  width: 80%;
   background: linear-gradient(135deg, #0b2545, #0a1d33);
   padding: 140px 80px;
   color: #fff;
   position: relative;
   box-shadow: inset -50px 0 100px rgba(0,0,0,0.4);
 
-  clip-path: polygon(0 0, 96% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(0 0, 92% 0, 82% 100%, 0% 100%);
 }
 
 
@@ -142,14 +142,15 @@ body {
 
 /* HERO RIGHT */
 .hero-right {
-  width: 45%;
-  background: #d91f26;
+  width: 80%;
+  height: 100vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   position: relative;
   overflow: hidden;
 
+  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 8% 100%);
 }
 
 
