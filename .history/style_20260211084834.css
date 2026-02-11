@@ -54,15 +54,16 @@ body {
 .hero {
   background: #d91f26;
   display: flex;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow: visible;
 }
+
 
 /* HERO LEFT */
 .hero-left {
   width: 55%;
   background: linear-gradient(135deg, #0b2545, #0a1d33);
-  padding: 140px 80px;
+  padding: 160px 80px;
   color: #fff;
   position: relative;
   box-shadow: inset -50px 0 100px rgba(0,0,0,0.4);
@@ -78,7 +79,7 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 85px;
+  font-size: 110px;
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;
@@ -150,7 +151,6 @@ body {
   position: relative;
   overflow: hidden;
 
-  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 8% 100%);
 }
 
 
@@ -279,80 +279,31 @@ body {
 }
 
 /* =====================
-   RESPONSIVO MOBILE
+   RESPONSIVE
 ===================== */
 @media (max-width: 900px) {
-
   .hero {
     flex-direction: column;
-    min-height: auto;
   }
 
-  .hero-left,
-  .hero-right {
+  .hero-left, .hero-right {
     width: 100%;
-    clip-path: none; /* remove corte diagonal no mobile */
   }
 
   .hero-left {
-    padding: 120px 25px 60px 25px;
-    text-align: left;
+    padding: 120px 40px;
   }
 
   .hero-left h1 {
-    font-size: 52px;
-    line-height: 1.1;
-  }
-
-  .stats li {
-    font-size: 14px;
-  }
-
-  .description {
-    max-width: 100%;
-    font-size: 14px;
-  }
-
-  .cta {
-    width: 100%;
-    padding: 16px;
-  }
-
-  .hero-right {
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 40px;
+    font-size: 70px;
   }
 
   .hero-right img {
-    width: 85%;
-    height: auto;
-    max-height: 500px;
-    margin: 0 auto;
+    width: 70%;
+    margin: 40px 0;
   }
 
   .section {
-    padding: 70px 25px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline {
-    padding-left: 15px;
-  }
-
-  .quote blockquote {
-    font-size: 18px;
-  }
-
-  .navbar {
-    padding: 20px 25px;
-  }
-
-  .navbar nav a {
-    margin-left: 15px;
-    font-size: 14px;
+    padding: 80px 40px;
   }
 }

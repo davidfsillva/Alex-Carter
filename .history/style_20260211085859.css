@@ -73,12 +73,12 @@ body {
 
 .hero-left .tag {
   letter-spacing: 4px;
-  font-size: 14px;
+  font-size: 1px;
   opacity: 0.7;
 }
 
 .hero-left h1 {
-  font-size: 85px;
+  font-size: 110px;
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;

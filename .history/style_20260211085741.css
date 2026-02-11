@@ -78,7 +78,7 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 85px;
+  font-size: 110px;
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;
@@ -109,7 +109,7 @@ body {
 
 .description {
   max-width: 420px;
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 35px;
   opacity: 0.9;
   line-height: 1.6;
