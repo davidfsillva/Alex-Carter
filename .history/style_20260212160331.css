@@ -82,8 +82,6 @@ body {
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;
-  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-
 }
 
 .stats {
@@ -97,8 +95,6 @@ body {
   opacity: 0.85;
   position: relative;
   padding-left: 18px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
 }
 
 .stats li::before {
@@ -117,8 +113,6 @@ body {
   margin-bottom: 35px;
   opacity: 0.9;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-
 }
 
 .cta {
@@ -185,8 +179,8 @@ body {
   position: absolute;
   bottom: -40px;
   left: 0;
-  width: 110%;
-  height: 50px;
+  width: 100%;
+  height: 120px;
 
   background: linear-gradient(
     to bottom,
@@ -196,7 +190,7 @@ body {
     rgba(11,37,69,0)
   );
 
-  filter: blur(1px);
+  filter: blur(2px);
   transform: scaleY(1.2);
 
   pointer-events: none;
@@ -393,7 +387,7 @@ body {
   .cta {
     margin-top: 25px;
     width: 100%;
-    padding: 18px;
+    padding: 16px;
     position: relative;
     z-index: 3;                       /* segurança extra */
   }
@@ -420,6 +414,4 @@ body {
     font-size: 14px;
     margin-left: 15px;
   }
-
-  
 }

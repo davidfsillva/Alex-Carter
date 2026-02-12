@@ -82,8 +82,6 @@ body {
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;
-  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-
 }
 
 .stats {
@@ -97,8 +95,6 @@ body {
   opacity: 0.85;
   position: relative;
   padding-left: 18px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
 }
 
 .stats li::before {
@@ -117,8 +113,6 @@ body {
   margin-bottom: 35px;
   opacity: 0.9;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-
 }
 
 .cta {
@@ -421,5 +415,12 @@ body {
     margin-left: 15px;
   }
 
-  
+  .stats li,
+  .description {
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.35),
+      0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+
 }

@@ -82,8 +82,6 @@ body {
   font-weight: 800;
   margin: 10px 0 30px;
   line-height: 0.9;
-  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
-
 }
 
 .stats {
@@ -97,8 +95,6 @@ body {
   opacity: 0.85;
   position: relative;
   padding-left: 18px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
 }
 
 .stats li::before {
@@ -111,14 +107,16 @@ body {
   top: 8px;
 }
 
+.mobile-card {
+  background: none;
+}
+
 .description {
   max-width: 420px;
   font-size: 15px;
   margin-bottom: 35px;
   opacity: 0.9;
   line-height: 1.6;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
-
 }
 
 .cta {
@@ -421,5 +419,26 @@ body {
     margin-left: 15px;
   }
 
+    .mobile-card {
+    background: rgba(255, 255, 255, 0.92);
+    color: #0b2545;
+
+    padding: 22px 20px;
+    border-radius: 14px;
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .mobile-card .stats li {
+    color: #0b2545;
+  }
+
+  .mobile-card .description {
+    color: #0b2545;
+    margin-top: 12px;
+  }
   
 }
