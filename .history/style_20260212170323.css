@@ -376,11 +376,6 @@ body {
     font-size: 50px;
     line-height: 1.1;
   }
-  /* esconde os stats no mobile */
-  .stats {
-    display: none;
-  }
-  
 
   .stats li {
     font-size: 14px;
@@ -429,7 +424,11 @@ body {
   }
 
   .hero-content-bottom {
-    margin-top: 290px;   /* controla o quão pra baixo vai */
+    margin-top: 90px;   /* controla o quão pra baixo vai */
+  }
+
+  .gt {
+    margin-top: 100px;
   }
 
 
