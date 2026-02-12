@@ -277,92 +277,39 @@ body {
   opacity: 0.8;
 }
 
+/* =====================
+   RESPONSIVO MOBILE
+===================== */
 @media (max-width: 900px) {
 
-  /* =====================
-     BASE
-  ===================== */
-  body {
-    background: #0b2545;
-  }
-
-  /* =====================
-     HERO
-  ===================== */
   .hero {
-    position: relative;              /* contexto do overlay */
-    display: flex;
     flex-direction: column;
     min-height: auto;
-    background: #0b2545;              /* remove vermelho */
   }
 
   .hero-left,
   .hero-right {
     width: 100%;
-    clip-path: none;
+    clip-path: none; /* remove corte diagonal no mobile */
   }
 
-  /* =====================
-     HERO LEFT (conteúdo + imagem)
-  ===================== */
   .hero-left {
-    position: relative;
-    z-index: 2;                       /* acima do fade */
-    padding: 120px 25px 360px 25px;
+    padding: 120px 25px 60px 25px;
     text-align: left;
+  }
 
+  .hero-left {
     background:
       linear-gradient(
-        rgba(11, 37, 69, 0.15),
-        rgba(11, 37, 69, 0.15)
+        rgba(11, 37, 69, 0.9),
+        rgba(10, 29, 51, 0.95)
       ),
       url("img/spbw.png");
 
     background-repeat: no-repeat;
-    background-position: center 85px;
-    background-size: 115%;
-  }
-
-  /* =====================
-     FADE DE TRANSIÇÃO
-  ===================== */
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 140px;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(11, 37, 69, 0),
-      rgba(11, 37, 69, 0.85),
-      #0b2545
-    );
-
-    pointer-events: none;
-    z-index: 1;                       /* abaixo do conteúdo */
-  }
-
-  /* =====================
-     ESCONDE ÁREA VERMELHA
-  ===================== */
-  .hero-right {
-    display: none;
-  }
-
-  /* =====================
-     TEXTO
-  ===================== */
-  .hero-left .tag {
-    margin-top: -40px;
-  }
-
-  .hero-left h1 {
-    font-size: 50px;
-    line-height: 1.1;
+    background-position: bottom center;
+    background-size: contain;
+    padding-bottom: 380px; /* espaço pra imagem */
   }
 
   .stats li {
@@ -370,25 +317,24 @@ body {
   }
 
   .description {
-    margin-top: 80px;
+    max-width: 100%;
     font-size: 14px;
-    line-height: 1.6;
   }
 
-  /* =====================
-     BOTÃO
-  ===================== */
   .cta {
-    margin-top: 25px;
     width: 100%;
     padding: 16px;
-    position: relative;
-    z-index: 3;                       /* segurança extra */
   }
 
-  /* =====================
-     SECTIONS
-  ===================== */
+  .hero-right {
+    display: none;
+  }
+
+
+  .hero-right img {
+    margin-top: -120px; /* ajusta conforme sua imagem */
+  }
+
   .section {
     padding: 70px 25px;
   }
@@ -397,15 +343,20 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* =====================
-     NAVBAR
-  ===================== */
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .quote blockquote {
+    font-size: 18px;
+  }
+
   .navbar {
     padding: 20px 25px;
   }
 
   .navbar nav a {
-    font-size: 14px;
     margin-left: 15px;
+    font-size: 14px;
   }
 }

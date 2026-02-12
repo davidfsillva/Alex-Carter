@@ -277,24 +277,14 @@ body {
   opacity: 0.8;
 }
 
+/* =====================
+   MOBILE HERO AJUSTADO
+===================== */
 @media (max-width: 900px) {
 
-  /* =====================
-     BASE
-  ===================== */
-  body {
-    background: #0b2545;
-  }
-
-  /* =====================
-     HERO
-  ===================== */
+  /* HERO STRUCTURE */
   .hero {
-    position: relative;              /* contexto do overlay */
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
-    background: #0b2545;              /* remove vermelho */
+    background: #0b2545; /* remove o vermelho do mobile */
   }
 
   .hero-left,
@@ -303,65 +293,32 @@ body {
     clip-path: none;
   }
 
-  /* =====================
-     HERO LEFT (conteúdo + imagem)
-  ===================== */
+  /* HERO LEFT COM IMAGEM NO FUNDO */
   .hero-left {
     position: relative;
-    z-index: 2;                       /* acima do fade */
     padding: 120px 25px 360px 25px;
     text-align: left;
 
     background:
       linear-gradient(
-        rgba(11, 37, 69, 0.15),
-        rgba(11, 37, 69, 0.15)
+        rgba(11, 37, 69, 0.88),
+        rgba(10, 29, 51, 0.92)
       ),
       url("img/spbw.png");
 
     background-repeat: no-repeat;
-    background-position: center 85px;
-    background-size: 115%;
+    background-position: bottom center;
+    background-size: 85%;
   }
 
-  /* =====================
-     FADE DE TRANSIÇÃO
-  ===================== */
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 140px;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(11, 37, 69, 0),
-      rgba(11, 37, 69, 0.85),
-      #0b2545
-    );
-
-    pointer-events: none;
-    z-index: 1;                       /* abaixo do conteúdo */
-  }
-
-  /* =====================
-     ESCONDE ÁREA VERMELHA
-  ===================== */
+  /* ESCONDE A AREA VERMELHA */
   .hero-right {
     display: none;
   }
 
-  /* =====================
-     TEXTO
-  ===================== */
-  .hero-left .tag {
-    margin-top: -40px;
-  }
-
+  /* TEXTOS */
   .hero-left h1 {
-    font-size: 50px;
+    font-size: 52px;
     line-height: 1.1;
   }
 
@@ -370,25 +327,18 @@ body {
   }
 
   .description {
-    margin-top: 80px;
+    max-width: 100%;
     font-size: 14px;
     line-height: 1.6;
   }
 
-  /* =====================
-     BOTÃO
-  ===================== */
+  /* BOTÃO */
   .cta {
-    margin-top: 25px;
     width: 100%;
     padding: 16px;
-    position: relative;
-    z-index: 3;                       /* segurança extra */
   }
 
-  /* =====================
-     SECTIONS
-  ===================== */
+  /* SECTIONS */
   .section {
     padding: 70px 25px;
   }
@@ -397,15 +347,23 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* =====================
-     NAVBAR
-  ===================== */
+  .timeline {
+    padding-left: 15px;
+  }
+
+  /* QUOTE */
+  .quote blockquote {
+    font-size: 18px;
+  }
+
+  /* NAVBAR */
   .navbar {
     padding: 20px 25px;
   }
 
   .navbar nav a {
-    font-size: 14px;
     margin-left: 15px;
+    font-size: 14px;
   }
 }
+

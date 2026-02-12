@@ -277,91 +277,29 @@ body {
   opacity: 0.8;
 }
 
+/* =====================
+   RESPONSIVO MOBILE
+===================== */
 @media (max-width: 900px) {
 
-  /* =====================
-     BASE
-  ===================== */
-  body {
-    background: #0b2545;
-  }
-
-  /* =====================
-     HERO
-  ===================== */
   .hero {
-    position: relative;              /* contexto do overlay */
-    display: flex;
     flex-direction: column;
     min-height: auto;
-    background: #0b2545;              /* remove vermelho */
   }
 
   .hero-left,
   .hero-right {
     width: 100%;
-    clip-path: none;
+    clip-path: none; /* remove corte diagonal no mobile */
   }
 
-  /* =====================
-     HERO LEFT (conteúdo + imagem)
-  ===================== */
   .hero-left {
-    position: relative;
-    z-index: 2;                       /* acima do fade */
-    padding: 120px 25px 360px 25px;
+    padding: 120px 25px 60px 25px;
     text-align: left;
-
-    background:
-      linear-gradient(
-        rgba(11, 37, 69, 0.15),
-        rgba(11, 37, 69, 0.15)
-      ),
-      url("img/spbw.png");
-
-    background-repeat: no-repeat;
-    background-position: center 85px;
-    background-size: 115%;
-  }
-
-  /* =====================
-     FADE DE TRANSIÇÃO
-  ===================== */
-  .hero::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 140px;
-
-    background: linear-gradient(
-      to bottom,
-      rgba(11, 37, 69, 0),
-      rgba(11, 37, 69, 0.85),
-      #0b2545
-    );
-
-    pointer-events: none;
-    z-index: 1;                       /* abaixo do conteúdo */
-  }
-
-  /* =====================
-     ESCONDE ÁREA VERMELHA
-  ===================== */
-  .hero-right {
-    display: none;
-  }
-
-  /* =====================
-     TEXTO
-  ===================== */
-  .hero-left .tag {
-    margin-top: -40px;
   }
 
   .hero-left h1 {
-    font-size: 50px;
+    font-size: 52px;
     line-height: 1.1;
   }
 
@@ -370,25 +308,28 @@ body {
   }
 
   .description {
-    margin-top: 80px;
+    max-width: 100%;
     font-size: 14px;
-    line-height: 1.6;
   }
 
-  /* =====================
-     BOTÃO
-  ===================== */
   .cta {
-    margin-top: 25px;
     width: 100%;
     padding: 16px;
-    position: relative;
-    z-index: 3;                       /* segurança extra */
   }
 
-  /* =====================
-     SECTIONS
-  ===================== */
+  .hero-right {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .hero-right img {
+    width: 85%;
+    height: auto;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+
   .section {
     padding: 70px 25px;
   }
@@ -397,15 +338,75 @@ body {
     grid-template-columns: 1fr;
   }
 
-  /* =====================
-     NAVBAR
-  ===================== */
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .quote blockquote {
+    font-size: 18px;
+  }
+
   .navbar {
     padding: 20px 25px;
   }
 
   .navbar nav a {
-    font-size: 14px;
     margin-left: 15px;
+    font-size: 14px;
   }
 }
+@media (max-width: 600px) {
+  .hero-left h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .cta {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+
+  .hero-right img {
+    width: 90%;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar nav a {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .grid {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .timeline {
+    padding-left: 10px;
+  }
+
+  .timeline-item h4 {
+    font-size: 14px;
+  }
+
+  .timeline-item p {
+    font-size: 13px;
+  }
+
+    .section {
+    padding: 50px 15px;
+  }
+}
+
+

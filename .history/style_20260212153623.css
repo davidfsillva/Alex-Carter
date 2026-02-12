@@ -295,6 +295,8 @@ body {
     flex-direction: column;
     min-height: auto;
     background: #0b2545;              /* remove vermelho */
+    overflow: visible; /* 🔥 libera o fade */
+
   }
 
   .hero-left,
@@ -333,7 +335,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 140px;
+    height: 0px;
 
     background: linear-gradient(
       to bottom,
